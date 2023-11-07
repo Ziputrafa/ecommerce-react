@@ -1,25 +1,56 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './layouts/Header';
+import Main from './layouts/Main';
+import Aside from './layouts/Aside';
+import ProductPage from './pages/product page/ProductPage';
+import About from './pages/menu/menu pages/About';
+import DevContact from './pages/menu/menu pages/DevContact';
+import ErrorPage from './pages/menu/menu pages/ErrorPage';
+import Cart from './pages/cart/Cart';
+import Filter from './pages/filter/Filter';
+import Warning from './pages/warning info/Warning';
+import ContextProvider from './context/context';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <ContextProvider>
+        <Aside />
+
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div>
+                <Header />
+                <Warning />
+                <Main />
+              </div>
+            }
+          />
+
+          <Route path="/About" element={<About />} />
+
+          <Route path="/Developer" element={<DevContact />} />
+
+          <Route
+            path="/Product-Page"
+            element={
+              <div>
+                <Warning />
+                <ProductPage />
+              </div>
+            }
+          />
+          <Route path="/Cart" element={<Cart />} />
+          <Route path="/Filter" element={<Filter />} />
+
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+      </ContextProvider>
+    </Router>
   );
-}
+};
 
 export default App;
