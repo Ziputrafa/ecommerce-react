@@ -1,28 +1,24 @@
 {
   "files": {
-    "main.css": "/ecommerce-react/static/css/main.0a481326.css",
-    "main.js": "/ecommerce-react/static/js/main.c9162629.js",
+    "main.css": "/ecommerce-react/static/css/main.7431696b.css",
+    "main.js": "/ecommerce-react/static/js/main.0127a6d0.js",
     "static/js/787.28cb0dcd.chunk.js": "/ecommerce-react/static/js/787.28cb0dcd.chunk.js",
     "static/media/trash.svg": "/ecommerce-react/static/media/trash.de5412264521b33e69dcb69b376e2945.svg",
     "index.html": "/ecommerce-react/index.html",
     "static/media/checkout.svg": "/ecommerce-react/static/media/checkout.2c308d566a074bc8bb3dddff96a3d9da.svg",
     "static/media/cart.svg": "/ecommerce-react/static/media/cart.c2c12d233256cff360b0f66a8088cd97.svg",
-    "static/media/info.svg": "/ecommerce-react/static/media/info.9ddf607765481f3cb9078653fba9b1ad.svg",
-    "static/media/code.svg": "/ecommerce-react/static/media/code.99b931e80ea2ef332e369a88f515e27e.svg",
-    "static/media/home.svg": "/ecommerce-react/static/media/home.749514c101e61ef9edcd962bbbfdfe17.svg",
     "static/media/funnel.svg": "/ecommerce-react/static/media/funnel.6007875ec31458a7d9a5e0c5d8095c58.svg",
     "static/media/star.svg": "/ecommerce-react/static/media/star.01ec3991b3ce2e333a69f235add8f5db.svg",
-    "static/media/hamburger.svg": "/ecommerce-react/static/media/hamburger.b8fa93e0a1485bc1cc22740a8ca4805d.svg",
     "static/media/search.svg": "/ecommerce-react/static/media/search.4b174aba3ca9225719f55dc131b8d17e.svg",
     "static/media/plus.svg": "/ecommerce-react/static/media/plus.94f712ea605122156fdfa8d222f4bdbd.svg",
     "static/media/close.svg": "/ecommerce-react/static/media/close.ad53bb5ed6a3d479682a9914af885681.svg",
     "static/media/minus.svg": "/ecommerce-react/static/media/minus.983e669a2ebb155df1e3cf1610edeb60.svg",
-    "main.0a481326.css.map": "/ecommerce-react/static/css/main.0a481326.css.map",
-    "main.c9162629.js.map": "/ecommerce-react/static/js/main.c9162629.js.map",
+    "main.7431696b.css.map": "/ecommerce-react/static/css/main.7431696b.css.map",
+    "main.0127a6d0.js.map": "/ecommerce-react/static/js/main.0127a6d0.js.map",
     "787.28cb0dcd.chunk.js.map": "/ecommerce-react/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a481326.css",
-    "static/js/main.c9162629.js"
+    "static/css/main.7431696b.css",
+    "static/js/main.0127a6d0.js"
   ]
 }
