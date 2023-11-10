@@ -10,7 +10,7 @@ const Cart = () => {
   return (
     <>
       {cartProducts.length ? (
-        <section className="p-4 w-full text-xs">
+        <section className="p-4 w-full text-xs desktop:w-9/12">
           {cartProducts?.map((cartProduct) => (
             <article key={cartProduct.id} className="grid grid-cols-4 gap-4 p-2 rounded-lg place-items-center bg-zinc-200 h-fit my-5">
               <img alt={`${cartProduct.title} in the cart`} className="object-cover w-full rounded-md h-24" src={cartProduct.thumbnail} />

@@ -5,7 +5,7 @@ import CategoryFilter from './filter options/CategoryFilter';
 
 const Filter = () => {
   return (
-    <section className="p-4 grid gap-8">
+    <section className="p-4 grid gap-8 desktop:w-9/12">
       <SelectedCategory />
 
       <section className="grid gap-4">
