@@ -19,7 +19,7 @@ const useGetProduct = (url) => {
         setLoading(false);
       } catch (error) {
         if (error.message !== 'canceled') {
-          setWarningMessage({ warningMessage: error.warningMessage, type: 'error' });
+          setWarningMessage({ warningMessage: error.message, type: 'error' });
         }
       }
     };

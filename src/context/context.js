@@ -12,7 +12,6 @@ const ContextComponent = ({ children }) => {
   const [filterSetting, dispatchFilter] = useReducer(filterReducer, INITIAL_FILTER_SETTING);
   const [limitProductToLoad, setLimitProductToLoad] = useState(20);
   const [warningMessage, setWarningMessage] = useState({ warningMessage: '', type: 'info' });
-  const [isSidebarShow, setIsSidebarShow] = useState(false);
 
   const contextValue = useMemo(() => {
     return {
@@ -28,10 +27,8 @@ const ContextComponent = ({ children }) => {
       setLimitProductToLoad,
       warningMessage,
       setWarningMessage,
-      isSidebarShow,
-      setIsSidebarShow,
     };
-  }, [link, cartProducts, selectProductToBuy, filterSetting.maxPrice, filterSetting.productSorting, filterSetting.productCategory, dispatchFilter, limitProductToLoad, warningMessage.warningMessage, warningMessage.type, isSidebarShow]);
+  }, [link, cartProducts, selectProductToBuy, filterSetting.maxPrice, filterSetting.productSorting, filterSetting.productCategory, dispatchFilter, limitProductToLoad, warningMessage.warningMessage, warningMessage.type]);
 
   return <Context.Provider value={contextValue}>{children}</Context.Provider>;
 };

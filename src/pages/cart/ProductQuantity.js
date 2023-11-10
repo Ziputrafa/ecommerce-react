@@ -19,14 +19,14 @@ const ProductQuantity = ({ product }) => {
         {product.quantity === 1 ? (
           <div></div>
         ) : (
-          <button onClick={() => handleProductQuantity(-1)} className="bg-white p-2 rounded-full">
+          <button onClick={() => handleProductQuantity(-1)} className="bg-white desktop:p-2 rounded-full">
             <img alt="minus button" src={minusIcon} />
           </button>
         )}
 
         <p>{product.quantity}</p>
 
-        <button onClick={() => handleProductQuantity(1)} className="bg-white p-2 rounded-full">
+        <button onClick={() => handleProductQuantity(1)} className="bg-white desktop:p-2 rounded-full">
           <img alt="plus button" src={plusIcon} />
         </button>
       </article>

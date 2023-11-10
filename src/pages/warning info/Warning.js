@@ -15,7 +15,7 @@ const Warning = () => {
       setTimeout(() => {
         setWarningMessage({ warningMessage: '', type: '' });
       }, [5000]);
-      return <section className={`${changeWarningStyle()} text-black w-fit px-6 py-2 rounded-lg sticky z-50 top-5 left-10`}>{warningMessage?.warningMessage}</section>;
+      return <section className={`${changeWarningStyle()} text-black w-fit px-6 py-2 rounded-lg sticky z-50 top-12 left-4`}>{warningMessage?.warningMessage}</section>;
     } else {
       return;
     }

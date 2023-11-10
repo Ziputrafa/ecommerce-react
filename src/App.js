@@ -1,11 +1,8 @@
 import './App.css';
 import Header from './layouts/Header';
 import Main from './layouts/Main';
-import Aside from './layouts/Aside';
 import ProductPage from './pages/product page/ProductPage';
-import About from './pages/menu/menu pages/About';
-import DevContact from './pages/menu/menu pages/DevContact';
-import ErrorPage from './pages/menu/menu pages/ErrorPage';
+import ErrorPage from './pages/ErrorPage';
 import Cart from './pages/cart/Cart';
 import Filter from './pages/filter/Filter';
 import Warning from './pages/warning info/Warning';
@@ -16,31 +13,25 @@ const App = () => {
   return (
     <Router>
       <ContextProvider>
-        <Aside />
-
         <Routes>
           <Route
-            path="/"
+            path="/ecommerce-react"
             element={
-              <div>
+              <>
                 <Header />
                 <Warning />
                 <Main />
-              </div>
+              </>
             }
           />
-
-          <Route path="/About" element={<About />} />
-
-          <Route path="/Developer" element={<DevContact />} />
 
           <Route
             path="/Product-Page"
             element={
-              <div>
+              <>
                 <Warning />
                 <ProductPage />
-              </div>
+              </>
             }
           />
           <Route path="/Cart" element={<Cart />} />

@@ -14,9 +14,9 @@ const SearchBar = () => {
     }
   };
   return (
-    <div className=" rounded-lg bg-white shadow-sm">
-      <input className="px-3 py-1 focus:outline-0 capitalize rounded-lg" ref={inputProduct} placeholder="Search Product" />
-      <button className={' px-2'} onClick={searchProduct}>
+    <div className=" rounded-lg bg-white shadow-sm pr-2">
+      <input className="px-2 py-1 focus:outline-0 capitalize rounded-lg" ref={inputProduct} placeholder="Search Product" />
+      <button className="" onClick={searchProduct}>
         <img alt="search button" src={search} />
       </button>
     </div>

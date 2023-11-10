@@ -22,7 +22,7 @@ const ProductPage = () => {
   }, []);
 
   return (
-    <section className="p-10 phone:p-5 ">
+    <section className="p-10 phone:p-5 desktop:w-9/12">
       <section ref={container} className="grid gap-6 w-1/2 phone:w-full ">
         {imageUrls ? (
           <SimpleImageSlider style={{ width: '100%', height: '250px' }} width={containerWidth} height={250} images={imageUrls} showBullets={true} autoPlay={true} slideDuration={1} />
