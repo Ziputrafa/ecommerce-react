@@ -6,6 +6,7 @@ Check out the live demo: [E-commerce React Website](https://ziputrafa.github.io/
 + React JS
 + Tailwind
 + Axios HTTP Library
++ React Routing
 ## Features
 + __Product Catalog:__ Display a wide range of products with detailed descriptions and prices.
 + __Filter and Sorting Options:__
